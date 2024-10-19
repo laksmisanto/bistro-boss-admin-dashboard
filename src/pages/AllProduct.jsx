@@ -1,6 +1,5 @@
-import profileImage from "../../public/Images/profileImage.jpg";
-
-const AllUser = () => {
+import foodItem from "../../public/Images/foodItem.png";
+const AllProduct = () => {
   return (
     <>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -8,19 +7,19 @@ const AllUser = () => {
           <thead className="text-xs text-gray-700 uppercase bg-gray-200">
             <tr>
               <th scope="col" className="px-6 py-3">
-                User Image
+                Product Image
               </th>
               <th scope="col" className="px-6 py-3">
-                User name
+                Product name
               </th>
               <th scope="col" className="px-6 py-3">
-                User Email
+                Color
               </th>
               <th scope="col" className="px-6 py-3">
-                User Role
+                Category
               </th>
               <th scope="col" className="px-6 py-3">
-                User Status
+                Price
               </th>
               <th scope="col" className="px-6 py-3">
                 Action
@@ -32,7 +31,7 @@ const AllUser = () => {
               <td className="px-4 py-2">
                 <div className="w-10 h-10">
                   <img
-                    src={profileImage}
+                    src={foodItem}
                     alt="food item"
                     className="w-full h-auto"
                   />
@@ -42,11 +41,11 @@ const AllUser = () => {
                 scope="row"
                 className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
               >
-                LS Santo
+                Apple MacBook Pro 17".
               </th>
-              <td className="px-6 py-4">ls.computerinfo1998@gmail.com</td>
-              <td className="px-6 py-4">Admin</td>
-              <td className="px-6 py-4 text-green-600">Active</td>
+              <td className="px-6 py-4">Silver</td>
+              <td className="px-6 py-4">Laptop</td>
+              <td className="px-6 py-4">$2999</td>
               <td className="px-6 py-4">
                 <table className="border-separate border-spacing-x-2">
                   <tr>
@@ -73,7 +72,7 @@ const AllUser = () => {
               <td className="px-4 py-2">
                 <div className="w-10 h-10">
                   <img
-                    src={profileImage}
+                    src={foodItem}
                     alt="food item"
                     className="w-full h-auto"
                   />
@@ -83,11 +82,11 @@ const AllUser = () => {
                 scope="row"
                 className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
               >
-                LS Santo
+                Apple MacBook Pro 17".
               </th>
-              <td className="px-6 py-4">ls.computerinfo1998@gmail.com</td>
-              <td className="px-6 py-4">Admin</td>
-              <td className="px-6 py-4 text-green-600">Active</td>
+              <td className="px-6 py-4">Silver</td>
+              <td className="px-6 py-4">Laptop</td>
+              <td className="px-6 py-4">$2999</td>
               <td className="px-6 py-4">
                 <table className="border-separate border-spacing-x-2">
                   <tr>
@@ -114,7 +113,7 @@ const AllUser = () => {
               <td className="px-4 py-2">
                 <div className="w-10 h-10">
                   <img
-                    src={profileImage}
+                    src={foodItem}
                     alt="food item"
                     className="w-full h-auto"
                   />
@@ -124,11 +123,11 @@ const AllUser = () => {
                 scope="row"
                 className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
               >
-                LS Santo
+                Apple MacBook Pro 17".
               </th>
-              <td className="px-6 py-4">ls.computerinfo1998@gmail.com</td>
-              <td className="px-6 py-4">Admin</td>
-              <td className="px-6 py-4 text-green-600">Active</td>
+              <td className="px-6 py-4">Silver</td>
+              <td className="px-6 py-4">Laptop</td>
+              <td className="px-6 py-4">$2999</td>
               <td className="px-6 py-4">
                 <table className="border-separate border-spacing-x-2">
                   <tr>
@@ -158,4 +157,4 @@ const AllUser = () => {
   );
 };
 
-export default AllUser;
+export default AllProduct;
