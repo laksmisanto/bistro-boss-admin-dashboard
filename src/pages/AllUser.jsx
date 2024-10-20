@@ -4,7 +4,7 @@ const AllUser = () => {
   return (
     <>
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <table className="w-full text-sm text-left rtl:text-right text-gray-500">
+        <table className="w-full font-roboto text-sm text-left rtl:text-right text-gray-500">
           <thead className="text-xs text-gray-700 uppercase bg-gray-200">
             <tr>
               <th scope="col" className="px-6 py-3">
@@ -46,7 +46,12 @@ const AllUser = () => {
               </th>
               <td className="px-6 py-4">ls.computerinfo1998@gmail.com</td>
               <td className="px-6 py-4">Admin</td>
-              <td className="px-6 py-4 text-green-600">Active</td>
+              <td className="px-6 py-4 ">
+                <div className="flex items-center gap-x-2 text-green-600">
+                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  Active
+                </div>
+              </td>
               <td className="px-6 py-4">
                 <table className="border-separate border-spacing-x-2">
                   <tr>
@@ -87,7 +92,12 @@ const AllUser = () => {
               </th>
               <td className="px-6 py-4">ls.computerinfo1998@gmail.com</td>
               <td className="px-6 py-4">Admin</td>
-              <td className="px-6 py-4 text-green-600">Active</td>
+              <td className="px-6 py-4">
+                <div className="flex items-center gap-x-2 text-orange-600">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                  De-Active
+                </div>
+              </td>
               <td className="px-6 py-4">
                 <table className="border-separate border-spacing-x-2">
                   <tr>
@@ -128,7 +138,12 @@ const AllUser = () => {
               </th>
               <td className="px-6 py-4">ls.computerinfo1998@gmail.com</td>
               <td className="px-6 py-4">Admin</td>
-              <td className="px-6 py-4 text-green-600">Active</td>
+              <td className="px-6 py-4">
+                <div className="flex items-center gap-x-2 text-green-600">
+                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  Active
+                </div>
+              </td>
               <td className="px-6 py-4">
                 <table className="border-separate border-spacing-x-2">
                   <tr>

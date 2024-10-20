@@ -1,6 +1,7 @@
 import { FaUsers, FaShoppingBag } from "react-icons/fa";
 import { AiFillProduct } from "react-icons/ai";
 import { BiSolidCategory } from "react-icons/bi";
+import CountUp from "react-countup";
 
 const Home = () => {
   return (
@@ -12,8 +13,10 @@ const Home = () => {
             <FaUsers size={24} className="text-orange-600" />
           </div>
           <div className="pl-4">
-            <h4 className="font-mono font-bold text-2xl text-gray-700">256</h4>
-            <p className="font-mono text-sm text-gray-500">Total User</p>
+            <h4 className="font-roboto font-bold text-2xl text-gray-700">
+              <CountUp end={84586} duration={10} />
+            </h4>
+            <p className="font-roboto text-sm text-gray-500">Total User</p>
           </div>
         </div>
         {/* Total Product Card Start */}
@@ -22,8 +25,10 @@ const Home = () => {
             <AiFillProduct size={24} className="text-purple-600" />
           </div>
           <div className="pl-4">
-            <h4 className="font-mono font-bold text-2xl text-gray-700">685</h4>
-            <p className="font-mono text-sm text-gray-500">Total Products</p>
+            <h4 className="font-roboto font-bold text-2xl text-gray-700">
+              <CountUp end={2658} duration={10} />
+            </h4>
+            <p className="font-roboto text-sm text-gray-500">Total Products</p>
           </div>
         </div>
         {/* Total Category Card Start */}
@@ -32,8 +37,10 @@ const Home = () => {
             <BiSolidCategory size={24} className="text-sky-600" />
           </div>
           <div className="pl-4">
-            <h4 className="font-mono font-bold text-2xl text-gray-700">685</h4>
-            <p className="font-mono text-sm text-gray-500">Total Category</p>
+            <h4 className="font-roboto font-bold text-2xl text-gray-700">
+              <CountUp end={125} duration={10} />
+            </h4>
+            <p className="font-roboto text-sm text-gray-500">Total Category</p>
           </div>
         </div>
         {/* Total Order Card Start */}
@@ -42,8 +49,10 @@ const Home = () => {
             <FaShoppingBag size={24} className="text-green-600" />
           </div>
           <div className="pl-4">
-            <h4 className="font-mono font-bold text-2xl text-gray-700">685</h4>
-            <p className="font-mono text-sm text-gray-500">Total Order</p>
+            <h4 className="font-roboto font-bold text-2xl text-gray-700">
+              <CountUp end={10521} duration={10} />
+            </h4>
+            <p className="font-roboto text-sm text-gray-500">Total Order</p>
           </div>
         </div>
       </div>
