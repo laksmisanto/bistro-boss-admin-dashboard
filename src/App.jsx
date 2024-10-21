@@ -16,6 +16,7 @@ import CreateProduct from "./pages/CreateProduct";
 import AllProduct from "./pages/AllProduct";
 import AllCategory from "./pages/AllCategory";
 import CreateCategory from "./pages/CreateCategory";
+import "react-toastify/dist/ReactToastify.css";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

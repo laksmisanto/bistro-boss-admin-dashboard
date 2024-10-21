@@ -42,7 +42,7 @@ const CreateProduct = () => {
           <label className="block font-roboto text-sm text-gray-700 pb-1">
             Image
           </label>
-          <div className="flex items-center justify-start w-full h-16  ">
+          <div className="flex items-center justify-start w-full h-16">
             <label
               htmlFor="dropzone-file"
               className="flex items-center justify-start  w-full h-full border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50   hover:bg-gray-100"

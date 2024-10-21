@@ -6,6 +6,7 @@ import {
   FaUserPlus,
   FaShoppingCart,
   FaAngleDown,
+  FaPowerOff,
 } from "react-icons/fa";
 import { BiSolidCategory } from "react-icons/bi";
 import { MdDashboard } from "react-icons/md";
@@ -16,7 +17,7 @@ const Sidebar = () => {
   return (
     <>
       <aside className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0">
-        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <div className="h-full relative px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <ul className="space-y-2 font-roboto font-medium">
             {/* Dashboard Start */}
             <li>
@@ -142,6 +143,17 @@ const Sidebar = () => {
               </ul>
             </li>
           </ul>
+          <div className="absolute bottom-8 ">
+            <button
+              type="button"
+              className="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <FaPowerOff />
+              <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
+                Logout
+              </span>
+            </button>
+          </div>
         </div>
       </aside>
     </>
