@@ -1,15 +1,11 @@
 import { useState } from "react";
 import { FaCloudUploadAlt } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 const CreateCategory = () => {
-  const [images, setImages] = useState([]);
+  const [images, setImages] = useState();
   const onImageChange = (e) => {
     if (e.target.files && e.target.files[0]) {
-      let files = e.target.files;
-      let reader = new FileReader();
-      reader.onload = function (e) {
-        setImages((oldArray) => [...oldArray, e.target.result]);
-      };
-      reader.readAsDataURL(files[0]);
+      setImages(URL.createObjectURL(e.target.files[0]));
     }
   };
   return (
@@ -57,20 +53,25 @@ const CreateCategory = () => {
                 type="file"
                 className="hidden"
                 onChange={onImageChange}
-                multiple="multiple"
               />
             </label>
           </div>
           <div className="flex items-center justify-start gap-x-1 my-4">
-            {images.map((image, index) => (
-              <div key={index} className="w-20">
+            {images && (
+              <div className="relative w-20">
+                <button
+                  onClick={() => setImages()}
+                  className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full flex items-center justify-center text-white"
+                >
+                  <MdClose />
+                </button>
                 <img
-                  src={image}
+                  src={images}
                   alt="Category Image"
                   className="w-full h-full object-cover"
                 />
               </div>
-            ))}
+            )}
           </div>
         </div>
         <div className="mb-2">
